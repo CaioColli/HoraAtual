@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Atual</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="horario()">
+
+    <header>
+        <a href="https://www.linkedin.com/feed/" class="icons-redes" target="_blank"><img src="imgs/linkedin.svg" alt=""></a>
+        <a href="https://github.com/CaioColli" class="icons-redes" target="_blank"><img src="imgs/github.svg" alt=""></a>
+    </header>
+    
+    <main>
+        <div id="bgMain" class="box-white">
+            <div id="boxInformation" class="box-information">
+                <span id="greeting"></span>
+                <span id="hour"></span>
+            </div>
+            <div>
+                <span id="imgCycle" class="img-cycle"></span>
+            </div>
+        </div>
+
+        <div class="box-btns">
+            <div id="playMsc" class="circle-play" onclick="play()">
+            </div>
+            <div id="pauseMsc" class="circle-pause" onclick="pause()">
+            </div>
+        </div>
+        
+    </main>
+
+    <audio id="myAudio" src="audio/lofi.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
